@@ -23,7 +23,7 @@ phases:
       - sha256sum -c kubectl.sha256
       # Install kubectl
       - chmod +x ./kubectl ./aws-iam-authenticator
-      - mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
+      # - mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
       - export PATH=$PWD/:$PATH
       - python --version
       - echo 'export PATH=$PWD/:$PATH' >> $HOME/.bashrc
