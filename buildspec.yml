@@ -29,7 +29,7 @@ phases:
       - echo 'export PATH=$PWD/:$PATH' >> $HOME/.bashrc
       - echo `kubectl version --short --client`
       - python -m pip install --upgrade --force pip
-      - apt-get install wget
+      - yum -y install wget
       - wget -q -O- https://dl.google.com/linux/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/google_linux_signing_key.pub.gpg
       # - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
       - apt-get update && apt-get -y install jq  && pip install --upgrade awscli pytest
