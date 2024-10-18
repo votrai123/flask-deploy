@@ -22,7 +22,7 @@ The app relies on a secret set as the environment variable `JWT_SECRET` to produ
 
 ```bash
 #  Mac/Linux/Windows
-python --version
+ python --version
 ```
 
 You can download a specific release version from <a href="https://www.python.org/downloads/" target="_blank">here</a>.
